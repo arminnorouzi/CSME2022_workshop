@@ -176,7 +176,7 @@ uts = [SOI_n'; mf_n'];
 xt1 = 0; % no effect as it is input-output model
 for i = 1:120000
 
-xt = dyn_dnn(xt1, uts(:,i),Par);
+xt = dyn_dnn_par(xt1, uts(:,i),Par);
 
 ydnn_hat(i) = xt(1);
 

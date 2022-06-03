@@ -1,4 +1,4 @@
-function nextState = dyn_dnn(state, action, Par)
+function nextState = dyn_dnn_par(state, action, Par)
 %
 %   Signature   : nextState = dyn_dnn(state, action, Par)
 %   Inputs      : state -> State, consisting of concatenation of cell states
