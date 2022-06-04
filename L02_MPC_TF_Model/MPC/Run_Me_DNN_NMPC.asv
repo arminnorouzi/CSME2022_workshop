@@ -52,7 +52,7 @@ Tout = Data(2:end,4);
 [mf_n, min_mf, max_mf] = dataTrainStandardized(mf);
 [SOI_n, min_SOI, max_SOI] = dataTrainStandardized(SOI);
 
-%% Constrain inputs - also need to be normalized
+%% Constrain inputs
 
 
 nlobj.MV(1).Min = (-10-min_SOI)/(max_SOI-min_SOI);
@@ -106,6 +106,6 @@ load_ref = RandomArray(130, 310, 100, 50);
 %% Simulink
 
 open('Load_control_NLMPC.slx')
-
+% sim('Load_control_NLMPC.slx')
 
 

@@ -94,7 +94,6 @@ yts = Tout_ts_n';
 
 %% import network from Tensorflow
 
-% modelfile = 'DNNmodel.h5';
 LoadModel = importKerasNetwork('DNNmodel_MPC.h5');
 
 analyzeNetwork(LoadModel)
